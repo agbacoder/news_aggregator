@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule, provideClientHydration } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,7 +18,7 @@ import { InfiniteScrollModule } from 'ngx-infinite-scroll';
   declarations: [
     AppComponent,
     NavComponent,
-    // AlertComponent,/
+    AlertComponent,
     HompageComponent,
     FavComponent,
     SigninComponent,
@@ -28,7 +29,9 @@ import { InfiniteScrollModule } from 'ngx-infinite-scroll';
     AppRoutingModule,
     HttpClientModule, 
     FormsModule, 
-    InfiniteScrollModule
+    InfiniteScrollModule,
+    RouterModule
+
   ],
   providers: [
     provideClientHydration()
